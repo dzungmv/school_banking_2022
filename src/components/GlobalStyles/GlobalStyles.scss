@@ -1,0 +1,180 @@
+@import 'normalize.css';
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+:root {
+    --primary-color: #fe2c55;
+    --text-color: #333;
+    --primary-boxshadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    --box-boxshadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --tooltip-boxshadow: rgb(0 0 0 / 12%) 0 2px 12px;
+    --font-family: 'SF Pro Display', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.5;
+    background-color: rgb(250, 250, 250);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    overflow-y: overlay;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+    font-family: var(--font-family);
+}
+
+hr {
+    width: 90%;
+
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #dddfe2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+// SP pro
+
+// @font-face {
+//     font-family: SF;
+//     src: url('/assets/fonts/SF-Pro-Display-Bold.otf');
+//     font-weight: 700;
+// }
+
+// @font-face {
+//     font-family: SF;
+//     src: url('/assets/fonts/SF-Pro-Display-Light.otf');
+//     font-weight: 300;
+// }
+
+// @font-face {
+//     font-family: SF;
+//     src: url('/assets/fonts/SF-Pro-Display-Medium.otf');
+//     font-weight: 500;
+// }
+
+// @font-face {
+//     font-family: SF;
+//     src: url('/assets/fonts/SF-Pro-Display-Regular.otf');
+//     font-weight: 400;
+// }
+
+// @font-face {
+//     font-family: SF;
+//     src: url('/assets/fonts/SF-Pro-Display-Semibold.otf');
+//     font-weight: 600;
+// }
+
+// @font-face {
+//     font-family: SF;
+//     src: url('/assets/fonts/SF-Pro-Display-Thin.otf');
+//     font-weight: 100;
+// }
+
+// @font-face {
+//     font-family: SF;
+//     src: url('/assets/fonts/SF-Pro-Display-Ultralight.otf');
+//     font-weight: 200;
+// }
+
+// Tippy
+body {
+    .tippy-content {
+        margin-top: -5px;
+    }
+
+    .tippy-box {
+        border-radius: 8px;
+        font-size: 1rem;
+        line-height: 22px;
+        background-color: rgba(84, 84, 84, 0.92);
+        max-width: 500px !important;
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow::before {
+        top: -8px;
+    }
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root,
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root,
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-disabled,
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    font-family: var(--font-family);
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+.css-1g24dm6-MuiInputBase-input-MuiOutlinedInput-input {
+    height: 1rem;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    line-height: 1rem;
+}
+
+// Custom Nprocess
+body {
+    #nprogress .bar {
+        background: var(--primary-color);
+    }
+
+    #nprogress .peg {
+        box-shadow: 0 0 10px var(--primary-color), 0 0 5px var(--primary-color);
+    }
+}
+
+// Custom toast
+
+body {
+    .Toastify__toast {
+        z-index: 100001;
+    }
+}

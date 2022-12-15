@@ -1,0 +1,30 @@
+.wrapper {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 739px) {
+        padding: 0 8px;
+    }
+
+    @media (min-width: 740px) {
+        padding: 0 8px;
+    }
+
+    .container {
+        width: 1150px;
+        height: 100%;
+
+        .heading-title {
+            padding: 8px 0;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 739px) {
+            width: 100%;
+        }
+    }
+}
